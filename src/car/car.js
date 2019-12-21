@@ -12,5 +12,6 @@ class Car {
 }
 
 let car = new Car('Mercedes', 35000, false, true);
+//let d = 2;
 console.log(car.name); 
 console.log(car.drive()); 
