@@ -19,5 +19,8 @@ class Car {
     }
 
     function createCar() {
-    let
+    let fiat500 = new Car("Fiat", "500",2010)
+
+        fiat500.displayMakeAndModel();
+    console.log("Rok produkcji: "+ fiat500.yearOfProduction);
     }
