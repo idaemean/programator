@@ -7,7 +7,7 @@ class Car {
     }
 
     drive() {
-        return 'Silnik włączony';
+        return 'Silnik włączonyyy';
      }
 }
 
