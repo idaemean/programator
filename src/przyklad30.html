@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<p>Zegar wystartował :)</p>
+<p id="demo"></p>
+
+<button onclick="clearInterval(myVar)">Zatrzymaj</button>
+<button onclick="tmr=setInterval(myTimer,1000)">Start</button>
+
+<script>
+    var myVar = setInterval(myTimer, 1000);
+    function myTimer(){
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+    }
+</script>
+</body>
+</html>
