@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<input type="text" id="nameInput" onchange="toUpper()">
+<p id="demo"></p>
+
+<script>
+    var counter = 0;
+    function toUpper() {
+        var i = document.getElementById("nameInput").value.toUpperCase();
+        document.getElementById("nameInput").value = i;
+
+
+        if (counter%2===0) {
+            document.getElementById("demo").innerHTML = i.toLowerCase();
+            document.getElementById("demo").style.color = "red"
+        } else {
+            document.getElementById("demo").innerHTML = i;
+            document.getElementById("demo").style.color = "green"
+        }
+        counter++;
+    }
+
+</script>
+
+</body>
+</html>
